@@ -217,7 +217,7 @@ angular.module('ui.bootstrap.dropdown', ['ui.bootstrap.position'])
         if (!rightalign) {
           css.left = pos.left - appendOffset.left + 'px';
         } else {
-          css.right = window.innerWidth -
+          css.right = appendTo.prop('offsetWidth') -
             (pos.left - appendOffset.left + $element.prop('offsetWidth')) + 'px';
         }
       }
